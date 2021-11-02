@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/ji_11/AndroidStudioProjects/BottomNaviTemplate/app/src/main/res/layout/activity_main.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/ji_11/AndroidStudioProjects/FLO/app/src/main/res/drawable/round.xml" value="0.2222222222222222" />
+        <entry key="..\:/Users/ji_11/AndroidStudioProjects/FLO/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/ji_11/AndroidStudioProjects/FLO/app/src/main/res/layout/activity_song.xml" value="0.1" />
+        <entry key="..\:/Users/ji_11/AndroidStudioProjects/FLO/app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="..\:/Users/ji_11/AndroidStudioProjects/FLO/app/src/main/res/layout/fragment_album.xml" value="0.1" />
+        <entry key="..\:/Users/ji_11/AndroidStudioProjects/FLO/app/src/main/res/layout/fragment_background.xml" value="0.21359649122807017" />
+        <entry key="..\:/Users/ji_11/AndroidStudioProjects/FLO/app/src/main/res/layout/fragment_banner.xml" value="0.10389888603256213" />
+        <entry key="..\:/Users/ji_11/AndroidStudioProjects/FLO/app/src/main/res/layout/fragment_detail.xml" value="0.264" />
+        <entry key="..\:/Users/ji_11/AndroidStudioProjects/FLO/app/src/main/res/layout/fragment_home.xml" value="0.264" />
+        <entry key="..\:/Users/ji_11/AndroidStudioProjects/FLO/app/src/main/res/layout/fragment_locker.xml" value="0.21359649122807017" />
+        <entry key="..\:/Users/ji_11/AndroidStudioProjects/FLO/app/src/main/res/layout/fragment_song.xml" value="0.176" />
+        <entry key="..\:/Users/ji_11/AndroidStudioProjects/FLO/app/src/main/res/layout/fragment_video.xml" value="0.2" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
