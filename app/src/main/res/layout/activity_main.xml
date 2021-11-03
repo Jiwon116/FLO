@@ -10,10 +10,24 @@
         android:id="@+id/main_frm"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-
         app:layout_constraintBottom_toTopOf="@id/main_player_layout"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <SeekBar
+        android:id="@+id/main_progress_sb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:paddingStart="0dp"
+        android:paddingEnd="0dp"
+        android:progressBackgroundTint="@color/song_player_bg"
+        android:progressTint="@color/song_player"
+        android:progress="0"
+        android:max="1000"
+        android:thumb="@color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/main_player_layout"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/main_player_layout"
@@ -21,10 +35,9 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@id/main_bnv"
         android:paddingVertical="5dp"
-        android:background="#F9F9F9"
-        >
-        <LinearLayout
+        android:background="#F9F9F9" >
 
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -38,20 +51,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="13sp"
-
-                android:text="라일락(LILAC)"
-
-                android:textColor="@color/black"
-                />
+                android:textColor="@color/black" />
             <TextView
                 android:id="@+id/main_miniplayer_singer_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="12sp"
-
-                android:text="아이유(IU)"/>
+                android:textSize="12sp" />
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
