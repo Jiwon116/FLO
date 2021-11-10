@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/locker_list_nsv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/locker_album_list_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/locker_all_song_select_iv"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/btn_playlist_select_off"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/locker_album_list_layout" />
+
+            <TextView
+                android:id="@+id/locker_all_song_select_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="전체선택"
+                android:textColor="#747474"
+                android:textSize="13sp"
+                app:layout_constraintStart_toEndOf="@id/locker_all_song_select_iv"
+                app:layout_constraintTop_toTopOf="@id/locker_all_song_select_iv" />
+
+
+            <ImageView
+                android:id="@+id/locker_all_song_listen_iv"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_browse_arrow_right"
+                app:layout_constraintStart_toEndOf="@id/locker_all_song_select_tv"
+                app:layout_constraintTop_toTopOf="@id/locker_all_song_select_tv" />
+
+            <TextView
+                android:id="@+id/locker_all_song_listen_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="전체듣기"
+                android:textColor="#747474"
+                android:textSize="13sp"
+                app:layout_constraintStart_toEndOf="@id/locker_all_song_listen_iv"
+                app:layout_constraintTop_toTopOf="@id/locker_all_song_select_iv" />
+
+            <TextView
+                android:id="@+id/locker_list_setting_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:text="편집"
+                android:textColor="#747474"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/locker_all_song_select_iv" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/locker_album_list_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                tools:listitem="@layout/item_locker"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintTop_toBottomOf="@id/locker_all_song_select_iv"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
