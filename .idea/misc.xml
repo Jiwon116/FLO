@@ -18,12 +18,13 @@
         <entry key="..\:/Users/ji_11/AndroidStudioProjects/FLO/app/src/main/res/layout/fragment_locker_song.xml" value="0.19610507246376813" />
         <entry key="..\:/Users/ji_11/AndroidStudioProjects/FLO/app/src/main/res/layout/fragment_look.xml" value="0.19610507246376813" />
         <entry key="..\:/Users/ji_11/AndroidStudioProjects/FLO/app/src/main/res/layout/fragment_music_file.xml" value="0.21359649122807017" />
-        <entry key="..\:/Users/ji_11/AndroidStudioProjects/FLO/app/src/main/res/layout/fragment_saved_song.xml" value="0.13508771929824562" />
+        <entry key="..\:/Users/ji_11/AndroidStudioProjects/FLO/app/src/main/res/layout/fragment_saved_song.xml" value="0.176" />
         <entry key="..\:/Users/ji_11/AndroidStudioProjects/FLO/app/src/main/res/layout/fragment_search.xml" value="0.19610507246376813" />
         <entry key="..\:/Users/ji_11/AndroidStudioProjects/FLO/app/src/main/res/layout/fragment_song.xml" value="0.176" />
         <entry key="..\:/Users/ji_11/AndroidStudioProjects/FLO/app/src/main/res/layout/fragment_video.xml" value="0.2" />
-        <entry key="..\:/Users/ji_11/AndroidStudioProjects/FLO/app/src/main/res/layout/item_album.xml" value="0.4" />
-        <entry key="..\:/Users/ji_11/AndroidStudioProjects/FLO/app/src/main/res/layout/item_locker.xml" value="1.0" />
+        <entry key="..\:/Users/ji_11/AndroidStudioProjects/FLO/app/src/main/res/layout/item_album.xml" value="0.2" />
+        <entry key="..\:/Users/ji_11/AndroidStudioProjects/FLO/app/src/main/res/layout/item_locker.xml" value="0.4" />
+        <entry key="..\:/Users/ji_11/AndroidStudioProjects/FLO/app/src/main/res/layout/item_song.xml" value="0.15489130434782608" />
       </map>
     </option>
   </component>

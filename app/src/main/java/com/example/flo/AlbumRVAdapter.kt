@@ -11,7 +11,7 @@ class AlbumRVAdapter(private val albumList: ArrayList<Album>) : RecyclerView.Ada
     interface MyItemClickListener{
         fun onItemClick(album : Album)
         // 삭제하는 인터페이스 설정
-        //fun onRemoveAlbum(position: Int)
+        fun onRemoveAlbum(position: Int)
     }
 
     // 리스너 객체를 전달받는 함수와 리스너 객체를 저장할 변수
@@ -29,18 +29,6 @@ class AlbumRVAdapter(private val albumList: ArrayList<Album>) : RecyclerView.Ada
         return ViewHolder(binding)
     }
 
-    // 아이템 추가
-    /*fun addItem(album: Album) {
-        albumList.add(album)
-        notifyDataSetChanged()
-    }*/
-
-    // 아이템 삭제
-    /*fun removeItem(position: Int) {
-        albumList.removeAt(position)
-        notifyDataSetChanged()
-    }*/
-
     // 뷰홀더에 데이터를 바인딩해줘야 할 때마다 호출되는 함수
     // 엄청나게 많이 호출됨
     override fun onBindViewHolder(holder: AlbumRVAdapter.ViewHolder, position: Int) {
@@ -49,6 +37,28 @@ class AlbumRVAdapter(private val albumList: ArrayList<Album>) : RecyclerView.Ada
         // 타이틀을 클릭했을 때 삭제하는 함수
         //holder.binding.itemAlbumTitleTv.setOnClickListener { mItemClickListener.onRemoveAlbum(position) }
     }
+
+    fun addItems(albums: ArrayList<Album>) {
+        albumList.clear()
+        albumList.addAll(albums)
+        notifyDataSetChanged()
+    }
+
+    fun addItem(album: Album) {
+        albumList.add(album)
+        notifyDataSetChanged()
+    }
+
+    fun removeItems() {
+        albumList.clear()
+        notifyDataSetChanged()
+    }
+
+    fun removeItem(position: Int) {
+        albumList.removeAt(position)
+        notifyDataSetChanged()
+    }
+
 
     // 데이터 세트 크기를 알려주는 함수
     // 리사이클러뷰가 마지막이 언제인지를 알게 됨
