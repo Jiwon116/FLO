@@ -167,6 +167,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun inputDummySongs() {
+        val jwt: Int = getUserIdx(this)
         val songDB = SongDatabase.getInstance(this)!!
         val songs = songDB.SongDao().getSongs()
 
